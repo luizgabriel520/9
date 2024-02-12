@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Cor de fundo preto */
+    color: #fff; /* Cor do texto */
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .banner {
+    /* Estilo para o seu banner de fundo */
+    background-image: url('coraçao.jpg');
+    background-size: contain;
+    width: 100%;
+    height: 200px; /* Altura ajustável conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagem-esquerda,
+  .imagem-direita {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .imagem-esquerda {
+    background-image: url('coraçao.jpg');
+    left: 0;
+  }
+  
+  .imagem-direita {
+    background-image: url('coraçao.jpg');
+    right: 0;
+  }
+  
+  .mensagem {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para melhor legibilidade */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative; /* Adicionado para controlar z-index */
+  }
+  
+  .mensagem h1 {
+    color: #ff5733; /* Cor personalizada para o título */
+  }
+  
+  .galeria {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .galeria img {
+    width: calc(33.33% - 10px); /* Defina o tamanho das imagens da galeria */
+    border-radius: 5px;
+    border: 5px solid #fff; /* Adiciona uma borda branca de 2px */
+  }
+  
+  .footer {
+    margin-top: 20px;
+  }
+  
+  .footer p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .heart {
+    color: red; /* Cor do coração */
+  }
+  
